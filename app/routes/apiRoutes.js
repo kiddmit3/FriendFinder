@@ -5,6 +5,12 @@
 // ===============================================================================
 
 var friendsData = require("../data/friends");
+// var tables = [{
+//   name: "yoda1",
+//   email: "9999999999",
+//   phone: "9999999999",
+//   uName: "JediMasta"
+// }];
 
 
 
@@ -19,9 +25,14 @@ module.exports = function(app) {
   // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
   // ---------------------------------------------------------------------------
 
-  app.get("/api/friends", function(req, res) {
-    res.json(friendsData);
-  });
+app.get("/api/friends", function(req, res) {
+  return res.json(friendsData.memArray);
+});
+
+
+// app.get("/api/tables", function(req, res) {
+//   return res.json(tables);
+// });
 
 
   // API POST Requests
@@ -43,6 +54,8 @@ module.exports = function(app) {
     
   });
 
+
+
   // ---------------------------------------------------------------------------
   // I added this below code so you could clear out the table while working with the functionality.
   // Don"t worry about it!
@@ -50,7 +63,6 @@ module.exports = function(app) {
   app.post("/api/clear", function() {
     // Empty out the arrays of data
     friendsData = [];
-
     console.log(friendsData);
   });
 };

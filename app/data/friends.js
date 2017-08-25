@@ -9,7 +9,7 @@ var memArray = [
     insta: "kiddmit3",
     photoURL: "https://preview.ibb.co/j7Xr6k/14711299_10210820964059176_4696343520063935414_o.jpg",
     coolness: "9000",
-    age: 27
+    age: "27"
   }
 ];
 

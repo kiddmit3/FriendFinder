@@ -8,22 +8,20 @@
     <meta name="author" content="">
     <title>FRIENDFINDER</title>
     <!-- Bootstrap core CSS -->
-    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="http://localhost:3000/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
-    <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="./https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='./https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
-    
+    <link href="http://localhost:3000/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
-    <link href="./css/grayscale.min.css" rel="stylesheet">
+    <link href="http://localhost:3000/css/grayscale.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">STOP LONLINESS. FIND FRIEND.</a>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">STOP LONELINESS. FIND FRIEND.</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fa fa-bars"></i>
@@ -34,7 +32,7 @@
                         <a class="nav-link js-scroll-trigger" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#questions">Survey</a>
+                        <a class="nav-link js-scroll-trigger" href="#questions">QUESTIONIARE</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#results">Results</a>
@@ -67,69 +65,140 @@
                 <div class="col-lg-8 mx-auto">
                     <h2>About FRIENDFINDER</h2>
                     <p>You want friends? Well you're going to get friends! Take the survey and we will determine how cool you really are and match you with someone who is slightly less cool than you so that you shall remain the coolest person in your group of friends.
+                    </p>
+
+                        <a href="#questions" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+
                 </div>
             </div>
         </div>
     </section>
+    <br/>
+    <br/>
+    <br/>
+
     <!-- Questionaire Section -->
-    <section id="questions" class="download-section content-section text-center">
-        <div class="container">
+    <section class="download-section content-section text-center">
+        <div class="container" id="questions">
             <div class="col-lg-8 mx-auto">
+             <br/>
                 <h2>QUESTIONIARE</h2>
                 <p>Yes, you are excited that this time has finally come. Hmm, maybe you actually dread this moment. Either way, TOO BAD! Answer these 5 SUPER UNIQUE and INSIGHTFUL questions and watch the magic unfold! (Please indicate 1 being you don't and 5 being you love) </p>
             </div>
             <form class="form-horizontal">
                 <div class="form-group col-lg-8 mx-auto">
                     <div class="col-sm-12">
-                        <input type="text" class="form-control" id="inputEmail3" placeholder="Name">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
                     </div>
                 </div>
                 <div class="form-group col-lg-8 mx-auto">
                     <div class="col-sm-12">
-                        <input type="text" class="form-control" id="inputPassword3" placeholder="Age">
+                        <input type="number" class="form-control" id="age" placeholder="Age">
                     </div>
                 </div>
                 <div class="form-group col-lg-8 mx-auto">
                     <div class="col-sm-12">
-                        <input type="text" class="form-control" id="inputPassword3" placeholder="Instagram">
+                        <input type="text" class="form-control" id="instagram" placeholder="Instagram">
                     </div>
                 </div>
-
-
-<div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Upload your best photo. SMILE!</p>
-  </div>
+                <div class="form-group col-lg-8 mx-auto">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="url" placeholder="Image URL">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">Upload your best photo. SMILE!</p>
+                </div>
                 <br/>
-
                 <h2>READY. SET. GO!</h2>
-                <div class="form-group col-lg-8 mx-auto form-inline"> How much do you like Rick and Morty?
-
-                    <select class="form-control mx-auto">
+            </form>
+        </div>
+        </div>
+        <div class="container" id="questions">
+            <div class="form-group col-lg-8 mx-auto"> How much do you like Rick and Morty?
+                
+                <div class="form-group col-lg-8 mx-auto">
+                    <select class="form-control" type="number" id="q1">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
                         <option>5</option>
                     </select>
-
                 </div>
-                
-                
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <button type="submit" class="btn btn-default">SUBMIT</button>
-                    </div>
-            </form>
             </div>
-        </div>
+
+
+            <div class="form-group col-lg-8 mx-auto"> How much do you like Rick and Morty?
+                
+                <div class="form-group col-lg-8 mx-auto">
+                    <select class="form-control" type="number" id="q2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group col-lg-8 mx-auto"> How much do you like Rick and Morty?
+                
+                <div class="form-group col-lg-8 mx-auto">
+                    <select class="form-control" type="number" id="q3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group col-lg-8 mx-auto"> How much do you like Rick and Morty?
+                
+                <div class="form-group col-lg-8 mx-auto">
+                    <select class="form-control" type="number" id="q4">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group col-lg-8 mx-auto"> How much do you like Rick and Morty?
+                
+                <div class="form-group col-lg-8 mx-auto">
+                    <select class="form-control" type="number" id="q5">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+                <div class="form-group">
+
+                        <button type="submit" class="btn btn-default" id="submit">SUBMIT</button>
+                </div>
+
     </section>
+    </div>
     <!-- Results Section -->
-    <section id="results" class="content-section text-center">
-        <div class="container">
+    <section class="content-section text-center">
+        <div class="container" id="results">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-8 mx-auto" id="resultArea">
                     <h2>Results</h2>
                     <p>YUP. THIS IS YOUR MATCH. Do not question it. Just embrace. This is the start of a new, everlasting relationship. GL! HF!
                 </div>
@@ -143,15 +212,83 @@
         <div class="container text-center">
             <p>Copyright &copy; FriendFinder David Lac 2017</p>
         </div>
+
     </footer>
     <!-- Bootstrap core JavaScript -->
-    <script src="./vendor/jquery/jquery.min.js"></script>
-    <script src="./vendor/popper/popper.min.js"></script>
-    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://localhost:3000/vendor/jquery/jquery.min.js"></script>
+    <script src="http://localhost:3000/vendor/popper/popper.min.js"></script>
+    <script src="http://localhost:3000/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
-    <script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="http://localhost:3000/vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="./js/grayscale.min.js"></script>
+    <script src="http://localhost:3000/js/grayscale.min.js"></script>
 </body>
 
 </html>
+
+
+<script type="text/javascript">
+
+
+
+
+
+
+var coolness = 0;
+
+$("#submit").on("click", function(event) {
+    event.preventDefault();
+
+
+    $("html, body").animate({ scrollTop: $('#results').offset().top }, 1000);
+
+    var q1 = $("#q1").val().trim();
+    var q2 = $("#q2").val().trim();
+    var q3 = $("#q3").val().trim();
+    var q4 = $("#q4").val().trim();
+    var q5 = $("#q5").val().trim();
+
+    coolness = parseInt(q1) + parseInt(q2) + parseInt(q3) + parseInt(q4) + parseInt(q5);
+
+
+    $.get("/api/friends", function(data)
+  {     
+        $("#resultArea").append("<h2> Name: "+data[0].name+"</h2>");             
+        $("#resultArea").append("<img src='"+data[0].photoURL+"''>");
+        $("#resultArea").append("<p> Age: "+data[0].age+"</p>");
+        $("#resultArea").append("<p> Instagram: "+data[0].insta+"</p>");   
+   });
+
+    $.get("/api/friends"), function(data) {
+        $("#resultArea").append(data[0]);
+    }
+
+    var newFriend = {
+        name: $("#name").val().trim(),
+        insta: $("#instagram").val().trim(),
+        photoURL: $("#url").val().trim(),
+        coolness: coolness,
+        age: $("#age").val().trim(),
+    };
+
+
+    var counter = 0;
+    for (var x in newFriend) {
+        console.log("I'm in the for loop");
+        if (newFriend[x] === "") {
+            console.log(newFriend[x]);
+            counter++;
+        }
+    }
+
+    if (counter === 0) {
+        $.post("/api/friends", newFriend)
+            .done(function(data) {
+
+            });
+    }
+
+
+});
+
+</script>
